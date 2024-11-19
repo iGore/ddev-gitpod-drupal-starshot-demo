@@ -1,0 +1,11 @@
+uuid: 6e910707-89c3-4ebb-a7cc-07e9e1846358
+langcode: en
+status: true
+dependencies:
+  theme:
+    - olivero
+label: Teaser
+id: olivero+teaser
+component: 'olivero:teaser'
+defaults:
+  props: {  }

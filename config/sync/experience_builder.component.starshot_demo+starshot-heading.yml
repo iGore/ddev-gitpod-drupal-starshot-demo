@@ -1,0 +1,118 @@
+uuid: 0edf0462-aba1-42c9-876c-9dc42ef8d46a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: Heading
+id: starshot_demo+starshot-heading
+component: 'starshot_demo:starshot-heading'
+defaults:
+  props:
+    align:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: left
+            label: left
+          -
+            value: right
+            label: right
+          -
+            value: center
+            label: center
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: left
+      expression: ℹ︎list_string␟value
+    content:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Sample heading'
+      expression: ℹ︎string␟value
+    font:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: heading
+            label: heading
+          -
+            value: heading-2
+            label: heading-2
+          -
+            value: heading-3
+            label: heading-3
+          -
+            value: heading-4
+            label: heading-4
+          -
+            value: heading-5
+            label: heading-5
+          -
+            value: heading-6
+            label: heading-6
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: heading
+      expression: ℹ︎list_string␟value
+    level:
+      field_type: integer
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: number
+      default_value:
+        value: 2
+      expression: ℹ︎integer␟value
+    margin:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: none
+            label: none
+          -
+            value: small
+            label: small
+          -
+            value: medium
+            label: medium
+          -
+            value: large
+            label: large
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: none
+      expression: ℹ︎list_string␟value
+    modifier_class:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: custom-class
+      expression: ℹ︎string␟value
+    theme:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: light
+            label: light
+          -
+            value: dark
+            label: dark
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: light
+      expression: ℹ︎list_string␟value

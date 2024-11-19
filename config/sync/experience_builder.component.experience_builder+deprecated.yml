@@ -1,0 +1,17 @@
+uuid: a684ea3e-9552-4095-8941-de677bfd242e
+langcode: en
+status: true
+dependencies: {  }
+label: 'Deprecated SDC'
+id: experience_builder+deprecated
+component: 'experience_builder:deprecated'
+defaults:
+  props:
+    text:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'A text field'
+      expression: ℹ︎string␟value

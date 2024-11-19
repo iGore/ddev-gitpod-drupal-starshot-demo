@@ -1,0 +1,93 @@
+uuid: d9827c68-b15c-4856-b8be-4d6a18008f24
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_library
+    - options
+  theme:
+    - starshot_demo
+label: Container
+id: starshot_demo+starshot-container
+component: 'starshot_demo:starshot-container'
+defaults:
+  props:
+    design:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: none
+            label: none
+          -
+            value: light
+            label: light
+          -
+            value: green
+            label: green
+          -
+            value: blue
+            label: blue
+          -
+            value: lavender
+            label: lavender
+          -
+            value: blue-stripe
+            label: blue-stripe
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: none
+      expression: ℹ︎list_string␟value
+    image:
+      field_type: entity_reference
+      field_storage_settings:
+        target_type: media
+      field_instance_settings:
+        handler: 'default:media'
+        handler_settings:
+          target_bundles:
+            image: image
+      field_widget: media_library_widget
+      default_value: {  }
+      expression: 'ℹ︎entity_reference␟{src↝entity␜␜entity:media:image␝field_media_image␞␟entity␜␜entity:file␝uri␞␟url,alt↝entity␜␜entity:media:image␝field_media_image␞␟alt,width↝entity␜␜entity:media:image␝field_media_image␞␟width,height↝entity␜␜entity:media:image␝field_media_image␞␟height}'
+    modifier_class:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: custom-class
+      expression: ℹ︎string␟value
+    side_padding:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value:
+        value: 0
+      expression: ℹ︎boolean␟value
+    spacing:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: none
+            label: none
+          -
+            value: small
+            label: small
+          -
+            value: large
+            label: large
+          -
+            value: x-large
+            label: x-large
+          -
+            value: xx-large
+            label: xx-large
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: large
+      expression: ℹ︎list_string␟value

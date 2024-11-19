@@ -1,0 +1,9 @@
+uuid: 21ca39b4-8f3c-4b05-b2e5-3130b26fa3e4
+langcode: en
+status: true
+dependencies: {  }
+label: Druplicon
+id: experience_builder+druplicon
+component: 'experience_builder:druplicon'
+defaults:
+  props: {  }

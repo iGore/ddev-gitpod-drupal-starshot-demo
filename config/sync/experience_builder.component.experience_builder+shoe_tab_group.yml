@@ -1,0 +1,48 @@
+uuid: 3e2e6d2c-9ef8-4a88-b75d-80312685110c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: 'Shoe Tab Group'
+id: experience_builder+shoe_tab_group
+component: 'experience_builder:shoe_tab_group'
+defaults:
+  props:
+    activation:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: auto
+      expression: ℹ︎string␟value
+    no_scroll:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value:
+        value: 0
+      expression: ℹ︎boolean␟value
+    placement:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: top
+            label: top
+          -
+            value: bottom
+            label: bottom
+          -
+            value: start
+            label: start
+          -
+            value: end
+            label: end
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: top
+      expression: ℹ︎list_string␟value

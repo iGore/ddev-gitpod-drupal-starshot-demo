@@ -1,0 +1,52 @@
+uuid: cef211f1-f996-4053-885e-92f7d5a212b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: Slider
+id: starshot_demo+starshot-slider
+component: 'starshot_demo:starshot-slider'
+defaults:
+  props:
+    slide_count:
+      field_type: list_integer
+      field_storage_settings:
+        allowed_values:
+          -
+            value: 1
+            label: '1'
+          -
+            value: 2
+            label: '2'
+          -
+            value: 3
+            label: '3'
+          -
+            value: 4
+            label: '4'
+          -
+            value: 5
+            label: '5'
+          -
+            value: 6
+            label: '6'
+          -
+            value: 7
+            label: '7'
+          -
+            value: 8
+            label: '8'
+          -
+            value: 9
+            label: '9'
+          -
+            value: 10
+            label: '10'
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: 2
+      expression: ℹ︎list_integer␟value

@@ -1,0 +1,16 @@
+uuid: 3075757b-b83c-453c-991a-b31dd9af1630
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BbTJSHu58tFhDXuQZ9iywwX3xVhXr16BhyRE9gvrlyk
+id: civictheme_image
+label: 'Old CivicTheme Image'
+description: 'Use local images for reusable media.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_c_m_image
+field_map:
+  name: name

@@ -1,0 +1,46 @@
+uuid: 316745c5-38bd-486a-a7be-6dba13d8680b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Shoe Tab'
+id: experience_builder+shoe_tab
+component: 'experience_builder:shoe_tab'
+defaults:
+  props:
+    active:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value: null
+      expression: ℹ︎boolean␟value
+    closable:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value: null
+      expression: ℹ︎boolean␟value
+    disabled:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value: null
+      expression: ℹ︎boolean␟value
+    label:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Tab 1'
+      expression: ℹ︎string␟value
+    panel:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: tab_1
+      expression: ℹ︎string␟value

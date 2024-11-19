@@ -1,0 +1,137 @@
+uuid: 6e51798f-e5d0-4882-967d-4afabb97d0fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: 'Shoe Icon'
+id: experience_builder+shoe_icon
+component: 'experience_builder:shoe_icon'
+defaults:
+  props:
+    color:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: ''
+            label: ''
+          -
+            value: gray
+            label: gray
+          -
+            value: primary
+            label: primary
+          -
+            value: neutral-soft
+            label: neutral-soft
+          -
+            value: neutral-medium
+            label: neutral-medium
+          -
+            value: neutral-loud
+            label: neutral-loud
+          -
+            value: primary-medium
+            label: primary-medium
+          -
+            value: primary-loud
+            label: primary-loud
+          -
+            value: black
+            label: black
+          -
+            value: white
+            label: white
+          -
+            value: red
+            label: red
+          -
+            value: gold
+            label: gold
+          -
+            value: green
+            label: green
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: ''
+      expression: ℹ︎list_string␟value
+    label:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'This is an icon'
+      expression: ℹ︎string␟value
+    name:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: moon-stars-fill
+            label: moon-stars-fill
+          -
+            value: moon-stars
+            label: moon-stars
+          -
+            value: star-fill
+            label: star-fill
+          -
+            value: star
+            label: star
+          -
+            value: stars
+            label: stars
+          -
+            value: rocket-fill
+            label: rocket-fill
+          -
+            value: rocket-takeoff-fill
+            label: rocket-takeoff-fill
+          -
+            value: rocket-takeoff
+            label: rocket-takeoff
+          -
+            value: rocket
+            label: rocket
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: moon-stars-fill
+      expression: ℹ︎list_string␟value
+    size:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: ''
+            label: ''
+          -
+            value: base
+            label: base
+          -
+            value: l
+            label: l
+          -
+            value: s
+            label: s
+          -
+            value: xs
+            label: xs
+          -
+            value: xxs
+            label: xxs
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: ''
+      expression: ℹ︎list_string␟value
+    slot:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value: null
+      expression: ℹ︎string␟value

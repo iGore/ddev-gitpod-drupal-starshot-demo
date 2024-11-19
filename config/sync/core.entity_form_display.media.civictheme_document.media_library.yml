@@ -1,0 +1,32 @@
+uuid: 9d44e971-ef98-4765-b600-ba5ac4a71fb0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.civictheme_document.field_c_m_document
+    - field.field.media.civictheme_document.field_c_m_media_tags
+    - media.type.civictheme_document
+_core:
+  default_config_hash: gr24asPSBMXIo5kSJM3zfpvmv22HZqK-vV55-jhlsFA
+id: media.civictheme_document.media_library
+targetEntityType: media
+bundle: civictheme_document
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_c_m_document: true
+  field_c_m_media_tags: true
+  moderation_state: true
+  path: true
+  status: true
+  uid: true

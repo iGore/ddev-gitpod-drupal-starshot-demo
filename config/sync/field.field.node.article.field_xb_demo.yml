@@ -1,0 +1,23 @@
+uuid: e832e6e5-d39e-4ce5-bff1-9eff6f2385b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_xb_demo
+    - node.type.article
+  module:
+    - experience_builder
+_core:
+  default_config_hash: TayN0noQ2FoX9ArwQ_I9GZIx9Rb35HBS3-zCm7ZzRds
+id: node.article.field_xb_demo
+field_name: field_xb_demo
+entity_type: node
+bundle: article
+label: '🪄 XB Demo ✨'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: component_tree

@@ -1,0 +1,49 @@
+uuid: f3bd0fc2-d10b-4861-9b73-393953aec0df
+langcode: en
+status: true
+dependencies: {  }
+label: Hero
+id: experience_builder+my-hero
+component: 'experience_builder:my-hero'
+defaults:
+  props:
+    cta1:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: View
+      expression: ℹ︎string␟value
+    cta1href:
+      field_type: uri
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: uri
+      default_value:
+        value: 'https://example.com'
+      expression: ℹ︎uri␟value
+    cta2:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: Click
+      expression: ℹ︎string␟value
+    heading:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'There goes my hero'
+      expression: ℹ︎string␟value
+    subheading:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Watch him as he goes!'
+      expression: ℹ︎string␟value

@@ -1,0 +1,50 @@
+uuid: 3b8bf880-96fb-43b5-bff6-f56b7d9085b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: Button
+id: starshot_demo+starshot-button
+component: 'starshot_demo:starshot-button'
+defaults:
+  props:
+    display:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: primary
+            label: primary
+          -
+            value: secondary
+            label: secondary
+          -
+            value: link
+            label: link
+          -
+            value: link-alt
+            label: link-alt
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: primary
+      expression: ℹ︎list_string␟value
+    text:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Learn more'
+      expression: ℹ︎string␟value
+    url:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'https://drupal.org'
+      expression: ℹ︎string␟value

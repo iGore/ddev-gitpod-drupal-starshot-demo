@@ -1,0 +1,22 @@
+uuid: ceb30f38-b315-49dd-8148-36ebb0c31afa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - civictheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: civictheme_content
+theme: civictheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,59 @@
+uuid: 4de289f5-d8fe-4c46-bb59-e9f0fa1e1634
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: Paragraph
+id: starshot_demo+starshot-paragraph
+component: 'starshot_demo:starshot-paragraph'
+defaults:
+  props:
+    content:
+      field_type: string_long
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textarea
+      default_value:
+        value: 'Easily create the digital experiences you want with Drupal.'
+      expression: ℹ︎string_long␟value
+    display:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: regular
+            label: regular
+          -
+            value: strong
+            label: strong
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: regular
+      expression: ℹ︎list_string␟value
+    modifier_class:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: custom-class
+      expression: ℹ︎string␟value
+    theme:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: light
+            label: light
+          -
+            value: dark
+            label: dark
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: light
+      expression: ℹ︎list_string␟value

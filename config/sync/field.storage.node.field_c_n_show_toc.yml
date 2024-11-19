@@ -1,0 +1,20 @@
+uuid: 22c30388-5492-4e92-80ea-5dcec8428b3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: zvhscHsvra_gBgahi6foPpeIq66xYnso-TNboKCwIIg
+id: node.field_c_n_show_toc
+field_name: field_c_n_show_toc
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

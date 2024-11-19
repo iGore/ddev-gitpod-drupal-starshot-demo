@@ -1,0 +1,111 @@
+uuid: c680ba3f-668e-4776-9f73-36af4b325deb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: 'Flexible Slot'
+id: starshot_demo+starshot-grid
+component: 'starshot_demo:starshot-grid'
+defaults:
+  props:
+    direction:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: across
+            label: across
+          -
+            value: down
+            label: down
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: across
+      expression: ℹ︎list_string␟value
+    gap:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: none
+            label: none
+          -
+            value: small
+            label: small
+          -
+            value: medium
+            label: medium
+          -
+            value: large
+            label: large
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: medium
+      expression: ℹ︎list_string␟value
+    horizontal:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: left
+            label: left
+          -
+            value: center
+            label: center
+          -
+            value: right
+            label: right
+          -
+            value: space-between
+            label: space-between
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: left
+      expression: ℹ︎list_string␟value
+    modifier_class:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: custom-class
+      expression: ℹ︎string␟value
+    vertical:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: top
+            label: top
+          -
+            value: center
+            label: center
+          -
+            value: bottom
+            label: bottom
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: top
+      expression: ℹ︎list_string␟value
+    wrap:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: wrap
+            label: wrap
+          -
+            value: nowrap
+            label: nowrap
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: wrap
+      expression: ℹ︎list_string␟value

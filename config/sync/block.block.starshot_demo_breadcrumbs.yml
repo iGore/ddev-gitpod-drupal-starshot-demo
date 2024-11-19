@@ -1,0 +1,22 @@
+uuid: eb8e79af-926c-4b2e-a386-c1787159da4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: starshot_demo_breadcrumbs
+theme: starshot_demo
+region: header_top_1
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

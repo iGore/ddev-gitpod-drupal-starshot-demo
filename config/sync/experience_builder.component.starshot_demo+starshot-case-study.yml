@@ -1,0 +1,33 @@
+uuid: 3a6dd850-99df-42ce-acf3-4156da8dd7cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_library
+  theme:
+    - starshot_demo
+label: 'Case Study'
+id: starshot_demo+starshot-case-study
+component: 'starshot_demo:starshot-case-study'
+defaults:
+  props:
+    image:
+      field_type: entity_reference
+      field_storage_settings:
+        target_type: media
+      field_instance_settings:
+        handler: 'default:media'
+        handler_settings:
+          target_bundles:
+            image: image
+      field_widget: media_library_widget
+      default_value: {  }
+      expression: 'ℹ︎entity_reference␟{src↝entity␜␜entity:media:image␝field_media_image␞␟entity␜␜entity:file␝uri␞␟url,alt↝entity␜␜entity:media:image␝field_media_image␞␟alt,width↝entity␜␜entity:media:image␝field_media_image␞␟width,height↝entity␜␜entity:media:image␝field_media_image␞␟height}'
+    title:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Case study'
+      expression: ℹ︎string␟value
