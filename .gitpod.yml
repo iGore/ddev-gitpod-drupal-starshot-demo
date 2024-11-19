@@ -6,7 +6,22 @@ tasks:
   - init: |
       ddev start -y
       ddev composer install
-      ddev drush si --existing-config --account-pass=admin -y
+      ddev drush si --account-pass=admin -y
+      ddev drush pm:install components
+      cd web/themes/contrib/demo_design_system
+      ddev npm i
+      ddev npm run build
+      cd -
+      cd web/themes/contrib/demo_design_system/starshot_demo
+      ddev npm i
+      ddev npm run build
+      cd -
+      ddev drush theme:enable civictheme -y
+      ddev drush config:set system.theme default civictheme -y
+      ddev drush theme:enable starshot_demo -y
+      ddev drush config:set system.theme default starshot_demo -y
+      ddev drush pm:install devel_generate -y
+      ddev drush devel-generate:content 1 --bundles=basic
       ddev drush cr
     command: |
       ddev start -y
