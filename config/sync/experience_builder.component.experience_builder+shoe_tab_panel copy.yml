@@ -1,0 +1,24 @@
+uuid: 3b2f9694-3235-46b1-9f59-a2aec53f9b5b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Shoe Tab Panel'
+id: experience_builder+shoe_tab_panel
+component: 'experience_builder:shoe_tab_panel'
+defaults:
+  props:
+    active:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value: null
+      expression: ℹ︎boolean␟value
+    name:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: tab_name
+      expression: ℹ︎string␟value

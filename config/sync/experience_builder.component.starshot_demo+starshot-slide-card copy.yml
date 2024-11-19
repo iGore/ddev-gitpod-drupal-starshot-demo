@@ -1,0 +1,60 @@
+uuid: 4b7ce2a8-f042-4ecc-857d-cd5ef8e71570
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_library
+    - options
+  theme:
+    - starshot_demo
+label: 'Slide Card'
+id: starshot_demo+starshot-slide-card
+component: 'starshot_demo:starshot-slide-card'
+defaults:
+  props:
+    color:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: red
+            label: red
+          -
+            value: green
+            label: green
+          -
+            value: blue
+            label: blue
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: red
+      expression: ℹ︎list_string␟value
+    image:
+      field_type: entity_reference
+      field_storage_settings:
+        target_type: media
+      field_instance_settings:
+        handler: 'default:media'
+        handler_settings:
+          target_bundles:
+            image: image
+      field_widget: media_library_widget
+      default_value: {  }
+      expression: 'ℹ︎entity_reference␟{src↝entity␜␜entity:media:image␝field_media_image␞␟entity␜␜entity:file␝uri␞␟url,alt↝entity␜␜entity:media:image␝field_media_image␞␟alt,width↝entity␜␜entity:media:image␝field_media_image␞␟width,height↝entity␜␜entity:media:image␝field_media_image␞␟height}'
+    title:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Ambitious websites made easy'
+      expression: ℹ︎string␟value
+    url:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'https://drupal.org'
+      expression: ℹ︎string␟value

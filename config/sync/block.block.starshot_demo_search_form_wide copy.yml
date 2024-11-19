@@ -1,0 +1,23 @@
+uuid: 96aa6160-87eb-4b8b-b20f-f6c5bcb70599
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: starshot_demo_search_form_wide
+theme: starshot_demo
+region: header_top_1
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

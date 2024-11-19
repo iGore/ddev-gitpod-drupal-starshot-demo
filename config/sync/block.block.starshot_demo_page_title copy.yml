@@ -1,0 +1,20 @@
+uuid: 623233f6-31b4-4b8d-8418-588c8c630b0c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: starshot_demo_page_title
+theme: starshot_demo
+region: header_top_1
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

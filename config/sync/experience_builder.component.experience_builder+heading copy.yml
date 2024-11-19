@@ -1,0 +1,64 @@
+uuid: bcb51f6f-878e-489f-9362-4fad9054d5be
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: Heading
+id: experience_builder+heading
+component: 'experience_builder:heading'
+defaults:
+  props:
+    element:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: div
+            label: div
+          -
+            value: h1
+            label: h1
+          -
+            value: h2
+            label: h2
+          -
+            value: h3
+            label: h3
+          -
+            value: h4
+            label: h4
+          -
+            value: h5
+            label: h5
+          -
+            value: h6
+            label: h6
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: h1
+      expression: ℹ︎list_string␟value
+    style:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: primary
+            label: primary
+          -
+            value: secondary
+            label: secondary
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: primary
+      expression: ℹ︎list_string␟value
+    text:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'A heading element'
+      expression: ℹ︎string␟value

@@ -1,0 +1,19 @@
+uuid: 821dad8c-e792-468e-8d43-f241a9c97f72
+langcode: en
+status: true
+dependencies:
+  theme:
+    - starshot_demo
+label: CTA
+id: starshot_demo+starshot-cta
+component: 'starshot_demo:starshot-cta'
+defaults:
+  props:
+    title:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Start your <em>Drupal</em> journey'
+      expression: ℹ︎string␟value

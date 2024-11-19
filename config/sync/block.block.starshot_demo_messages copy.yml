@@ -1,0 +1,22 @@
+uuid: f0a8dc02-1134-4e97-b3a8-b613e728d63e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: starshot_demo_messages
+theme: starshot_demo
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: fa069c7b-1fac-4c61-b65c-3a5a5b89ec70
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.civictheme_site_sections
+_core:
+  default_config_hash: oocDE4m6O62aabl8BLPo0R7npn4hfVtbtyzHK31idFE
+id: taxonomy_term.civictheme_site_sections.default
+targetEntityType: taxonomy_term
+bundle: civictheme_site_sections
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  simple_sitemap: true
+  status: true

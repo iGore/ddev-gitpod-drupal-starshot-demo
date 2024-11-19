@@ -1,0 +1,21 @@
+uuid: f37b1036-4cd0-42f6-a661-65843213ce04
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - text
+_core:
+  default_config_hash: Tn5dziOE86DbAtmWipRGSEoixYD2f5FIS--f4YwUQnA
+id: media.field_c_m_transcript
+field_name: field_c_m_transcript
+entity_type: media
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

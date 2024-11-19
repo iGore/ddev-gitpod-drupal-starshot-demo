@@ -1,0 +1,52 @@
+uuid: d2c04e28-50ce-40eb-9342-e751d9238d2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+  theme:
+    - starshot_demo
+label: 'Stats Card'
+id: starshot_demo+starshot-statistic-card
+component: 'starshot_demo:starshot-statistic-card'
+defaults:
+  props:
+    description:
+      field_type: string_long
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textarea
+      default_value:
+        value: 'of sites built with Drupal'
+      expression: ℹ︎string_long␟value
+    number:
+      field_type: integer
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: number
+      default_value:
+        value: 90
+      expression: ℹ︎integer␟value
+    suffix:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: '%'
+      expression: ℹ︎string␟value
+    theme:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: light
+            label: light
+          -
+            value: dark
+            label: dark
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: light
+      expression: ℹ︎list_string␟value

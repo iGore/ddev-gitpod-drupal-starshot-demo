@@ -1,0 +1,20 @@
+uuid: a278a204-fddf-44c9-ad1b-bb159ad1cc5a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - civictheme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: civictheme_page_title
+theme: civictheme
+region: header_top_1
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

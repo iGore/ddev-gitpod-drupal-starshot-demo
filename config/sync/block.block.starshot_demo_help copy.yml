@@ -1,0 +1,22 @@
+uuid: efdbd7db-d74f-4bde-b25d-0edb8721664a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: starshot_demo_help
+theme: starshot_demo
+region: header_top_1
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

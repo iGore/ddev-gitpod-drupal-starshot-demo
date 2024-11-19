@@ -1,0 +1,51 @@
+uuid: 25783d58-77ea-4467-a08e-df0246e69805
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: 'Shoe Badge'
+id: experience_builder+shoe_badge
+component: 'experience_builder:shoe_badge'
+defaults:
+  props:
+    pill:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value:
+        value: 1
+      expression: ℹ︎boolean␟value
+    pulse:
+      field_type: boolean
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: boolean_checkbox
+      default_value:
+        value: 1
+      expression: ℹ︎boolean␟value
+    variant:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: primary
+            label: primary
+          -
+            value: success
+            label: success
+          -
+            value: neutral
+            label: neutral
+          -
+            value: warning
+            label: warning
+          -
+            value: danger
+            label: danger
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: primary
+      expression: ℹ︎list_string␟value

@@ -1,0 +1,21 @@
+uuid: 61aafc2f-5ba0-4d75-bca0-f64e6ec366aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - experience_builder
+    - node
+_core:
+  default_config_hash: AaIBP0EXjdg7CT3xfvhU-LpBZ5W2BmQTSZ6ajNVN-Wo
+id: node.field_xb_demo
+field_name: field_xb_demo
+entity_type: node
+type: component_tree
+settings: {  }
+module: experience_builder
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

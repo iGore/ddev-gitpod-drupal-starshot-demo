@@ -1,0 +1,25 @@
+uuid: bf4f9842-925a-4444-8200-8f453529aa15
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - starshot_demo
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: starshot_demo_site_branding
+theme: starshot_demo
+region: header_top_1
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

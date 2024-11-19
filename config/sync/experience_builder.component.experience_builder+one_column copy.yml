@@ -1,0 +1,32 @@
+uuid: 1c2abbaa-ffc2-4679-99c1-b4ad1cb5e6e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: 'One Column'
+id: experience_builder+one_column
+component: 'experience_builder:one_column'
+defaults:
+  props:
+    width:
+      field_type: list_string
+      field_storage_settings:
+        allowed_values:
+          -
+            value: full
+            label: full
+          -
+            value: wide
+            label: wide
+          -
+            value: normal
+            label: normal
+          -
+            value: narrow
+            label: narrow
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: full
+      expression: ℹ︎list_string␟value

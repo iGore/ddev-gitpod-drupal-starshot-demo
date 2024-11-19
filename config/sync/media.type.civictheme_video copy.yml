@@ -1,0 +1,16 @@
+uuid: 8860ea92-8ed1-4599-8cff-6e7d5aa19ac9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tAtLOxSiv-b2TLo_70LhB23lFbe89R3iJdB6kUVCnYs
+id: civictheme_video
+label: 'Old CivicTheme Video'
+description: 'A locally hosted video file.'
+source: video_file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_c_m_video_file
+field_map:
+  name: name

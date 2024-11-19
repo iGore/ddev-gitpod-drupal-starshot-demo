@@ -1,0 +1,35 @@
+uuid: 0499d033-e546-4ed0-8a98-8b3492ecfb34
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+label: 'Two Column'
+id: experience_builder+two_column
+component: 'experience_builder:two_column'
+defaults:
+  props:
+    width:
+      field_type: list_integer
+      field_storage_settings:
+        allowed_values:
+          -
+            value: 25
+            label: '25'
+          -
+            value: 33
+            label: '33'
+          -
+            value: 50
+            label: '50'
+          -
+            value: 66
+            label: '66'
+          -
+            value: 75
+            label: '75'
+      field_instance_settings: {  }
+      field_widget: options_select
+      default_value:
+        value: 25
+      expression: ℹ︎list_integer␟value

@@ -1,0 +1,17 @@
+uuid: beddecb7-c7fe-4896-b5e4-67d4d38c72ae
+langcode: en
+status: true
+dependencies: {  }
+label: Section
+id: experience_builder+my-section
+component: 'experience_builder:my-section'
+defaults:
+  props:
+    text:
+      field_type: string
+      field_storage_settings: {  }
+      field_instance_settings: {  }
+      field_widget: string_textfield
+      default_value:
+        value: 'Our mission is to deliver the best products and services to our customers. We strive to exceed expectations and continuously improve our offerings.'
+      expression: ℹ︎string␟value

@@ -1,0 +1,32 @@
+uuid: 81125631-455d-4d27-b9a1-f0b92f90903b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: uTB2U1NZ7GmuB6ohCEnpqt-TA5osc7OzWoLGeBgZddA
+id: node.field_c_n_banner_type
+field_name: field_c_n_banner_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: inherit
+      label: Inherit
+    -
+      value: default
+      label: Default
+    -
+      value: large
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
